@@ -1,48 +1,65 @@
 import "../index.css";
-import { IoCodeSharp, IoRocketOutline } from "react-icons/io5";
-import { IoMdTrendingUp } from "react-icons/io";
+import { PiLightning } from "react-icons/pi";
+import { MdOutlineDraw } from "react-icons/md";
+import { MdDevices } from "react-icons/md";
+import { FaRegCheckCircle } from "react-icons/fa";
+
 
 const Details = () => {
   return (
     <div className=" py-30 container-custom">
       <div className="text-center space-y-2 mb-12">
-        <h1 className="font-bold text-4xl">Engineered for Velocity</h1>
-        <p>Everything you need to move from idea to production in minutes.</p>
+        <h1 className="font-bold text-4xl">Why Students Choose TextCraft</h1>
+        <p>
+          The fastest way to clean and format your academic papers and notes.
+        </p>
       </div>
-      <div className="flex flex-col lg:flex-row items-center justify-between gap-6 mx-auto px-4 max-w-7xl">
-        <div className="bg-white rounded-2xl p-8 w-full lg:w-auto">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mx-auto px-4 max-w-7xl">
+        <div className="bg-white border border-[#D9D9E8] shadow-sm rounded-2xl p-8 w-full lg:w-auto">
           <div className="space-y-6">
             <div className="w-fit bg-[#ededfc] p-4 rounded-2xl">
-              <IoCodeSharp className="text-[#4648d4] text-3xl" />
+              <PiLightning className="text-[#4648d4] text-3xl" />
             </div>
-            <h1 className="text-xl font-bold">Code</h1>
+            <h1 className="text-xl font-bold">Lightning Fast</h1>
             <p>
-              Write cleaner code with built-in linting, automated refactoring,
-              and local environment parity that works out of the box.
+              Format your text instantly in the browser. No server calls, no
+              lag, just results.
             </p>
           </div>
         </div>
-        <div className="bg-white rounded-2xl p-8 w-full lg:w-auto">
+        <div className="bg-white border border-[#D9D9E8] shadow-sm  rounded-2xl p-8 w-full lg:w-auto">
           <div className="space-y-6">
             <div className="w-fit bg-[#d6f1ff] p-4 rounded-2xl">
-              <IoRocketOutline className="text-[#006691] text-3xl " />
+              <MdOutlineDraw className="text-[#006691] text-3xl " />
             </div>
             <h1 className="text-xl font-bold">Ship</h1>
             <p>
-              Continuous delivery that doesn't break. Automate your CI/CD
-              pipelines with simple YAML configurations and instant rollbacks.
+              A minimalist interface that respects your focus and reduces
+              digital eye-strain.
             </p>
           </div>
         </div>
-        <div className="bg-white rounded-2xl p-8 w-full lg:w-auto">
+        <div className="bg-white border border-[#D9D9E8] shadow-sm  rounded-2xl p-8 w-full lg:w-auto">
           <div className="space-y-6">
             <div className="w-fit bg-[#f7efe6] p-4 rounded-2xl">
-              <IoMdTrendingUp className="text-[#8f4700] text-3xl" />
+              <MdDevices className="text-[#8f4700] text-3xl" />
             </div>
-            <h1 className="text-xl font-bold">Scale</h1>
+            <h1 className="text-xl font-bold">Responsive</h1>
             <p>
-              Autoscale your infrastructure based on real-time traffic. Monitor
-              performance metrics with granular observability dashboards.
+              Works perfectly on your tablet, phone, or desktop. Format on the
+              go.
+            </p>
+          </div>
+        </div>
+        <div className="bg-white border border-[#D9D9E8] shadow-sm  rounded-2xl p-8 w-full lg:w-auto">
+          <div className="space-y-6">
+            <div className="w-fit bg-[#f7efe6] p-4 rounded-2xl">
+              <FaRegCheckCircle className="text-[#8f4700] text-3xl" />
+            </div>
+            <h1 className="text-xl font-bold">Responsive</h1>
+            <p>
+              Works perfectly on your tablet, phone, or desktop. Format on the
+              go.
             </p>
           </div>
         </div>
