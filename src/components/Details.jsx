@@ -15,10 +15,10 @@ const Details = () => {
         </p>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mx-auto px-4 max-w-7xl">
-        <div className="bg-white border border-[#D9D9E8] shadow-sm rounded-2xl p-8 w-full lg:w-auto">
+        <div className="bg-white border border-[#D9D9E8] shadow-lg rounded-2xl p-8 w-full lg:w-auto">
           <div className="space-y-6">
-            <div className="w-fit bg-[#ededfc] p-4 rounded-2xl">
-              <PiLightningBold className="text-[#4232d1] text-3xl hover:bg-[]" />
+            <div className="w-fit bg-[#ededfc] p-4 rounded-2xl hover:bg-[#4F46E5] transition-all duration-300 cursor-pointer group">
+              <PiLightningBold className="text-[#4232d1] text-3xl group-hover:text-white transition-all duration-300" />
             </div>
             <h1 className="text-xl font-bold">Lightning Fast</h1>
             <p>
@@ -27,10 +27,10 @@ const Details = () => {
             </p>
           </div>
         </div>
-        <div className="bg-white border border-[#D9D9E8] shadow-sm  rounded-2xl p-8 w-full lg:w-auto">
+        <div className="bg-white border border-[#D9D9E8] shadow-lg  rounded-2xl p-8 w-full lg:w-auto">
           <div className="space-y-6">
-            <div className="w-fit bg-[#ededfc] p-4 rounded-2xl">
-              <MdOutlineDraw className="text-[#4232d1] text-3xl " />
+            <div className="w-fit bg-[#ededfc] p-4 rounded-2xl  hover:bg-[#4F46E5] transition-all duration-300 cursor-pointer group">
+              <MdOutlineDraw className="text-[#4232d1] text-3xl group-hover:text-white transition-all duration-300 " />
             </div>
             <h1 className="text-xl font-bold">Ship</h1>
             <p>
@@ -39,10 +39,10 @@ const Details = () => {
             </p>
           </div>
         </div>
-        <div className="bg-white border border-[#D9D9E8] shadow-sm  rounded-2xl p-8 w-full lg:w-auto">
+        <div className="bg-white border border-[#D9D9E8] shadow-lg  rounded-2xl p-8 w-full lg:w-auto">
           <div className="space-y-6">
-            <div className="w-fit bg-[#ededfc] p-4 rounded-2xl">
-              <MdDevices className="text-[#4232d1] text-3xl" />
+            <div className="w-fit bg-[#ededfc] p-4 rounded-2xl  hover:bg-[#4F46E5] transition-all duration-300 cursor-pointer group">
+              <MdDevices className="text-[#4232d1] text-3xl group-hover:text-white transition-all duration-300" />
             </div>
             <h1 className="text-xl font-bold">Responsive</h1>
             <p>
@@ -51,10 +51,10 @@ const Details = () => {
             </p>
           </div>
         </div>
-        <div className="bg-white border border-[#D9D9E8] shadow-sm  rounded-2xl p-8 w-full lg:w-auto">
+        <div className="bg-white border border-[#D9D9E8] shadow-lg  rounded-2xl p-8 w-full lg:w-auto">
           <div className="space-y-6">
-            <div className="w-fit bg-[#ededfc] p-4 rounded-2xl">
-              <FaRegCheckCircle className="text-[#4232d1] text-3xl" />
+            <div className="w-fit bg-[#ededfc] p-4 rounded-2xl  hover:bg-[#4F46E5] transition-all duration-300 cursor-pointer group">
+              <FaRegCheckCircle className="text-[#4232d1] text-3xl group-hover:text-white transition-all duration-300" />
             </div>
             <h1 className="text-xl font-bold">Responsive</h1>
             <p>
