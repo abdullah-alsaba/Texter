@@ -2,8 +2,8 @@ import "../index.css";
 
 const Navbar = () => {
   return (
-    <div className="bg-white">
-      <div className="max-w-6xl mx-auto px-6">
+    <div className="bg-white border-b border-gray-100/50 backdrop-blur">
+      <div className="max-w-6xl mx-auto px-6 ">
         <div className="navbar py-3">
           {/* LEFT */}
           <div className="navbar-start">

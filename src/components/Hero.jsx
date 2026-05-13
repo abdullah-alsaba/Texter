@@ -2,12 +2,12 @@ import "../index.css";
 
 const Hero = () => {
   return (
-    <div className=" bg-[#fafaff]">
-      <div className="hero min-h-screen container-custom">
+    <div className=" bg-[#fafaff] py-20">
+      <div className="hero container-custom">
         <div className="hero-content text-center">
-          <div className="max-w-md">
+          <div>
             <h1 className="text-5xl font-bold">Simple Text Utility App</h1>
-            <p className="py-6">
+            <p className="py-6 max-w-lg">
               Minimize cognitive load and maximize productivity with our clean,
               student-centric text transformation tools. Digital stationary
               designed for modern workflows.

@@ -10,7 +10,7 @@ const Footer = () => {
             </div>
             <p>© 2024 TextCraft. Minimalist tools for modern students.</p>
           </aside>
-          <div className="flex justify-between gap-10">
+          <div className="flex justify-between gap-10 sm:gap-8">
             <a href="#" className="hover:text-[#4232d1]">
               <h6 className="footer-title">Privacy Policy</h6>
             </a>
