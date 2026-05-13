@@ -2,6 +2,7 @@
 import Navbar from "./components/Navbar";
 import Details from "./components/Details";
 import FAQ from "./components/FAQ";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -11,7 +12,8 @@ function App() {
     <>
       <Navbar />
       <Details />
-      <FAQ/>
+      <FAQ />
+      <Footer/>
     </>
   );
 }
