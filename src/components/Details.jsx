@@ -1,5 +1,5 @@
 import "../index.css";
-import { PiLightning } from "react-icons/pi";
+import { PiLightningBold } from "react-icons/pi";
 import { MdOutlineDraw } from "react-icons/md";
 import { MdDevices } from "react-icons/md";
 import { FaRegCheckCircle } from "react-icons/fa";
@@ -18,7 +18,7 @@ const Details = () => {
         <div className="bg-white border border-[#D9D9E8] shadow-sm rounded-2xl p-8 w-full lg:w-auto">
           <div className="space-y-6">
             <div className="w-fit bg-[#ededfc] p-4 rounded-2xl">
-              <PiLightning className="text-[#4648d4] text-3xl" />
+              <PiLightningBold className="text-[#4232d1] text-3xl hover:bg-[]" />
             </div>
             <h1 className="text-xl font-bold">Lightning Fast</h1>
             <p>
@@ -29,8 +29,8 @@ const Details = () => {
         </div>
         <div className="bg-white border border-[#D9D9E8] shadow-sm  rounded-2xl p-8 w-full lg:w-auto">
           <div className="space-y-6">
-            <div className="w-fit bg-[#d6f1ff] p-4 rounded-2xl">
-              <MdOutlineDraw className="text-[#006691] text-3xl " />
+            <div className="w-fit bg-[#ededfc] p-4 rounded-2xl">
+              <MdOutlineDraw className="text-[#4232d1] text-3xl " />
             </div>
             <h1 className="text-xl font-bold">Ship</h1>
             <p>
@@ -41,8 +41,8 @@ const Details = () => {
         </div>
         <div className="bg-white border border-[#D9D9E8] shadow-sm  rounded-2xl p-8 w-full lg:w-auto">
           <div className="space-y-6">
-            <div className="w-fit bg-[#f7efe6] p-4 rounded-2xl">
-              <MdDevices className="text-[#8f4700] text-3xl" />
+            <div className="w-fit bg-[#ededfc] p-4 rounded-2xl">
+              <MdDevices className="text-[#4232d1] text-3xl" />
             </div>
             <h1 className="text-xl font-bold">Responsive</h1>
             <p>
@@ -53,8 +53,8 @@ const Details = () => {
         </div>
         <div className="bg-white border border-[#D9D9E8] shadow-sm  rounded-2xl p-8 w-full lg:w-auto">
           <div className="space-y-6">
-            <div className="w-fit bg-[#f7efe6] p-4 rounded-2xl">
-              <FaRegCheckCircle className="text-[#8f4700] text-3xl" />
+            <div className="w-fit bg-[#ededfc] p-4 rounded-2xl">
+              <FaRegCheckCircle className="text-[#4232d1] text-3xl" />
             </div>
             <h1 className="text-xl font-bold">Responsive</h1>
             <p>
