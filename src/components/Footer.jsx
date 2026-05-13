@@ -4,7 +4,7 @@ const Footer = () => {
     return (
       <footer className="footer sm:footer-horizontal bg-[#f0f3ff] text-base-content p-10">
         <aside>
-          <div className="abar-start">
+          <div className="navbar-start">
             <a className="text-2xl font-bold text-indigo-600">TextCraft</a>
           </div>
           <p>© 2024 TextCraft. Minimalist tools for modern students.</p>
