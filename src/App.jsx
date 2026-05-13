@@ -1,5 +1,6 @@
 // import { useState } from 'react'
 import Navbar from "./components/Navbar";
+import Details from "./components/Details";
 
 
 function App() {
@@ -7,9 +8,10 @@ function App() {
 
   return (
     <>
-    <Navbar/>
+      <Navbar />
+      <Details/>
     </>
-  )
+  );
 }
 
 export default App

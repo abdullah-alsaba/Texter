@@ -4,7 +4,7 @@ import { IoMdTrendingUp } from "react-icons/io";
 
 const Details = () => {
   return (
-    <div className="bg-[#f0f4ff] py-30">
+    <div className=" py-30 container-custom">
       <div className="text-center space-y-2 mb-12">
         <h1 className="font-bold text-4xl">Engineered for Velocity</h1>
         <p>Everything you need to move from idea to production in minutes.</p>
