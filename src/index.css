@@ -1,5 +1,9 @@
 @import "tailwindcss";
-@plugin "daisyui"; 
+@plugin "daisyui";
+
+* {
+    font-family: "Google Sans", sans-serif;
+}
 
 .container-custom {
     max-width: 1200px;

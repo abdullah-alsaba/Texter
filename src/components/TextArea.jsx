@@ -1,13 +1,6 @@
 import "../index.css";
-import {
-  ChevronUp,
-  ChevronDown,
-  Trash2,
-  Copy,
-  AlignJustify,
-} from "lucide-react";
+import { ChevronUp, ChevronDown, Trash2, Copy } from "lucide-react";
 import { FaAlignLeft } from "react-icons/fa6";
-
 
 const TextArea = () => {
   return (
@@ -49,7 +42,13 @@ const TextArea = () => {
           </button>
         </div>
         <div>
-          <div>helllo world</div>
+          <div
+            className="border border-gray-200 rounded-xl outline-none
+          focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100 p-4 mt-6"
+          >
+            <h1 className="font-bold text-[#4d34cf] text-3xl">0</h1>
+            <p className="font-bold">Word Count</p>
+          </div>
         </div>
       </div>
     </div>
