@@ -5,63 +5,83 @@ import { FaAlignLeft } from "react-icons/fa6";
 const TextArea = () => {
   return (
     <div className="py-20 bg-[#fafaff]">
-      <div className="bg-white border border-gray-100 shadow-sm rounded-2xl container-custom p-6">
-        {/* Textarea */}
-        <textarea
-          className="w-full h-48 p-4 border border-gray-200 rounded-xl outline-none
-          focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100
-          text-gray-700 placeholder-gray-400 resize-none"
-          placeholder="Write your text here..."
-        />
+      <div className="container-custom">
+        {/* Main Card */}
+        <div className="bg-white border border-gray-100 rounded-3xl p-8 shadow-[0_2px_12px_rgba(0,0,0,0.03)]">
+          {/* Textarea */}
+          <textarea
+            className="w-full h-52 p-5 border border-gray-200 rounded-2xl outline-none
+            focus:border-[#4F46E5] focus:ring-4 focus:ring-indigo-100
+            text-gray-700 placeholder-gray-400 resize-none transition-all duration-300"
+            placeholder="Write your text here..."
+          />
 
-        {/* Buttons */}
-        <div className="flex flex-wrap gap-3 mt-6">
-          <button className="flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-[#3525cc] bg-[#f0f3ff] hover:bg-[#3525cc] hover:text-white transition-all duration-300">
-            <ChevronUp size={16} />
-            Convert to Uppercase
-          </button>
+          {/* Buttons */}
+          <div className="flex flex-wrap gap-3 mt-6">
+            <button className="flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium text-[#4F46E5] bg-[#EEF2FF] hover:bg-[#4F46E5] hover:text-white transition-all duration-300">
+              <ChevronUp size={16} />
+              Convert to Uppercase
+            </button>
 
-          <button className="flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-[#3525cc] bg-[#f0f3ff] hover:bg-[#3525cc] hover:text-white transition-all duration-300">
-            <ChevronDown size={16} />
-            Convert to Lowercase
-          </button>
+            <button className="flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium text-[#4F46E5] bg-[#EEF2FF] hover:bg-[#4F46E5] hover:text-white transition-all duration-300">
+              <ChevronDown size={16} />
+              Convert to Lowercase
+            </button>
 
-          <button className="flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-[#3525cc] bg-[#f0f3ff] hover:bg-[#3525cc] hover:text-white transition-all duration-300">
-            <Trash2 size={16} />
-            Clear Text
-          </button>
+            <button className="flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium text-[#4F46E5] bg-[#EEF2FF] hover:bg-[#4F46E5] hover:text-white transition-all duration-300">
+              <Trash2 size={16} />
+              Clear Text
+            </button>
 
-          <button className="flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-[#3525cc] bg-[#f0f3ff] hover:bg-[#3525cc] hover:text-white transition-all duration-300">
-            <Copy size={16} />
-            Copy Text
-          </button>
+            <button className="flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium text-[#4F46E5] bg-[#EEF2FF] hover:bg-[#4F46E5] hover:text-white transition-all duration-300">
+              <Copy size={16} />
+              Copy Text
+            </button>
 
-          <button className="flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-[#3525cc] bg-[#f0f3ff] hover:bg-[#3525cc] hover:text-white transition-all duration-300">
-            <FaAlignLeft size={16} />
-            Remove Extra Spaces
-          </button>
-        </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
-          <div
-            className="border border-gray-200 rounded-xl outline-none
-          focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100 p-4 mt-6 text-center shadow-md"
-          >
-            <h1 className="font-bold text-[#4d34cf] text-3xl">0</h1>
-            <p className="font-bold">Word Count</p>
+            <button className="flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium text-[#4F46E5] bg-[#EEF2FF] hover:bg-[#4F46E5] hover:text-white transition-all duration-300">
+              <FaAlignLeft size={14} />
+              Remove Extra Spaces
+            </button>
           </div>
-          <div
-            className="border border-gray-200 rounded-xl outline-none
-          focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100 p-4 mt-6 text-center shadow-md"
-          >
-            <h1 className="font-bold text-[#4d34cf] text-3xl">0</h1>
-            <p className="font-bold">Character Count</p>
+
+          {/* Stats */}
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-8">
+            <div className="border border-gray-100 rounded-2xl py-7 px-4 text-center bg-white shadow-sm">
+              <h1 className="font-bold text-[#4F46E5] text-3xl">0</h1>
+              <p className="text-sm text-gray-500 font-medium mt-1">
+                Word Count
+              </p>
+            </div>
+
+            <div className="border border-gray-100 rounded-2xl py-7 px-4 text-center bg-white shadow-sm">
+              <h1 className="font-bold text-[#4F46E5] text-3xl">0</h1>
+              <p className="text-sm text-gray-500 font-medium mt-1">
+                Character Count
+              </p>
+            </div>
+
+            <div className="border border-gray-100 rounded-2xl py-7 px-4 text-center bg-white shadow-sm">
+              <h1 className="font-bold text-[#4F46E5] text-3xl">0.0 min</h1>
+              <p className="text-sm text-gray-500 font-medium mt-1">
+                Reading Time
+              </p>
+            </div>
           </div>
-          <div
-            className="border border-gray-200 rounded-xl outline-none
-          focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100 p-4 mt-6 text-center shadow-md"
-          >
-            <h1 className="font-bold text-[#4d34cf] text-3xl">0.0 min</h1>
-            <p className="font-bold">Reading Time</p>
+
+          {/* Divider */}
+          <hr className="my-8 border-gray-100" />
+
+          {/* Live Preview */}
+          <div>
+            <h1 className="font-bold text-2xl text-gray-800 mb-5">
+              Live Preview
+            </h1>
+
+            <div className="bg-[#F5F7FF] rounded-2xl h-52 border border-indigo-50">
+              <p className="p-6 italic text-sm text-gray-400">
+                Nothing to preview
+              </p>
+            </div>
           </div>
         </div>
       </div>
