@@ -6,6 +6,8 @@ import {
   Copy,
   AlignJustify,
 } from "lucide-react";
+import { FaAlignLeft } from "react-icons/fa6";
+
 
 const TextArea = () => {
   return (
@@ -42,9 +44,12 @@ const TextArea = () => {
           </button>
 
           <button className="flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-[#3525cc] bg-[#f0f3ff] hover:bg-[#3525cc] hover:text-white transition-all duration-300">
-            <AlignJustify size={16} />
+            <FaAlignLeft size={16} />
             Remove Extra Spaces
           </button>
+        </div>
+        <div>
+          <div>helllo world</div>
         </div>
       </div>
     </div>
