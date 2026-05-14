@@ -1,4 +1,4 @@
-import "../index.css";
+import "../index.css"; 
 
 const TextArea = () => {
     return (
@@ -10,7 +10,7 @@ const TextArea = () => {
   text-gray-700 placeholder-gray-400 resize-none"
             placeholder="Write your text here..."
           />
-          <div className=" mb-8">
+          <div className=" mb-8npm">
             <button className="btn rounded-full px-8 text-[#3525cc] bg-[#f0f3ff] border-none">
               Learn More
             </button>
