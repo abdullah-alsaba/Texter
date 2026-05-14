@@ -41,13 +41,27 @@ const TextArea = () => {
             Remove Extra Spaces
           </button>
         </div>
-        <div>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
           <div
             className="border border-gray-200 rounded-xl outline-none
-          focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100 p-4 mt-6"
+          focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100 p-4 mt-6 text-center shadow-md"
           >
             <h1 className="font-bold text-[#4d34cf] text-3xl">0</h1>
             <p className="font-bold">Word Count</p>
+          </div>
+          <div
+            className="border border-gray-200 rounded-xl outline-none
+          focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100 p-4 mt-6 text-center shadow-md"
+          >
+            <h1 className="font-bold text-[#4d34cf] text-3xl">0</h1>
+            <p className="font-bold">Character Count</p>
+          </div>
+          <div
+            className="border border-gray-200 rounded-xl outline-none
+          focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100 p-4 mt-6 text-center shadow-md"
+          >
+            <h1 className="font-bold text-[#4d34cf] text-3xl">0.0 min</h1>
+            <p className="font-bold">Reading Time</p>
           </div>
         </div>
       </div>
