@@ -3,6 +3,14 @@ import { ChevronUp, ChevronDown, Trash2, Copy } from "lucide-react";
 import { FaAlignLeft } from "react-icons/fa6";
 
 const TextArea = () => {
+  const handelUpCase = () => {
+    console.log("clicked");
+  };
+  const handelLowCase = () => {
+    console.log("clicked");
+  };
+  
+
   return (
     <div className="py-20 bg-[#fafaff]">
       <div className="container-custom">
@@ -18,27 +26,33 @@ const TextArea = () => {
 
           {/* Buttons */}
           <div className="flex flex-wrap gap-3 mt-6">
-            <button className="flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium text-[#4F46E5] bg-[#EEF2FF] hover:bg-[#4F46E5] hover:text-white transition-all duration-300">
+            <button
+              className="flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium text-[#4F46E5] bg-[#EEF2FF] hover:bg-[#4F46E5] hover:text-white transition-all duration-300 cursor-pointer"
+              onClick={handelUpCase}
+            >
               <ChevronUp size={16} />
               Convert to Uppercase
             </button>
 
-            <button className="flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium text-[#4F46E5] bg-[#EEF2FF] hover:bg-[#4F46E5] hover:text-white transition-all duration-300">
+            <button
+              className="flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium text-[#4F46E5] bg-[#EEF2FF] hover:bg-[#4F46E5] hover:text-white transition-all duration-300 cursor-pointer"
+              onClick={handelLowCase}
+            >
               <ChevronDown size={16} />
               Convert to Lowercase
             </button>
 
-            <button className="flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium text-[#4F46E5] bg-[#EEF2FF] hover:bg-[#4F46E5] hover:text-white transition-all duration-300">
+            <button className="flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium text-[#4F46E5] bg-[#EEF2FF] hover:bg-[#4F46E5] hover:text-white transition-all duration-300 cursor-pointer">
               <Trash2 size={16} />
               Clear Text
             </button>
 
-            <button className="flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium text-[#4F46E5] bg-[#EEF2FF] hover:bg-[#4F46E5] hover:text-white transition-all duration-300">
+            <button className="flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium text-[#4F46E5] bg-[#EEF2FF] hover:bg-[#4F46E5] hover:text-white transition-all duration-300 cursor-pointer">
               <Copy size={16} />
               Copy Text
             </button>
 
-            <button className="flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium text-[#4F46E5] bg-[#EEF2FF] hover:bg-[#4F46E5] hover:text-white transition-all duration-300">
+            <button className="flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium text-[#4F46E5] bg-[#EEF2FF] hover:bg-[#4F46E5] hover:text-white transition-all duration-300 cursor-pointer">
               <FaAlignLeft size={14} />
               Remove Extra Spaces
             </button>
