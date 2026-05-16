@@ -4,7 +4,12 @@ import { ChevronUp, ChevronDown, Trash2, Copy } from "lucide-react";
 import { FaAlignLeft } from "react-icons/fa6";
 
 const TextArea = () => {
+
+  
   const [text, setText] = useState("");
+  const words = text.trim().split(/\s+/).filter(Boolean).length;
+  const chars = text.replace(/\s/g, "").length;
+  const readingTime = words === 0 ? 0 : Number((words / 200).toFixed(2));
 
   const handelOnChange = (event) => {
     setText(event.target.value);
@@ -93,21 +98,27 @@ const TextArea = () => {
           {/* Stats */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-8">
             <div className="border border-gray-100 rounded-2xl py-7 px-4 text-center bg-white shadow-sm">
-              <h1 className="font-bold text-[#4F46E5] text-3xl">0</h1>
+              <h1 className="font-bold text-[#4F46E5] text-3xl">
+                {words}
+              </h1>
               <p className="text-sm text-gray-500 font-medium mt-1">
                 Word Count
               </p>
             </div>
 
             <div className="border border-gray-100 rounded-2xl py-7 px-4 text-center bg-white shadow-sm">
-              <h1 className="font-bold text-[#4F46E5] text-3xl">0</h1>
+              <h1 className="font-bold text-[#4F46E5] text-3xl">
+                {chars}
+              </h1>
               <p className="text-sm text-gray-500 font-medium mt-1">
                 Character Count
               </p>
             </div>
 
             <div className="border border-gray-100 rounded-2xl py-7 px-4 text-center bg-white shadow-sm">
-              <h1 className="font-bold text-[#4F46E5] text-3xl">0.0 min</h1>
+              <h1 className="font-bold text-[#4F46E5] text-3xl">
+                {readingTime} min
+              </h1>
               <p className="text-sm text-gray-500 font-medium mt-1">
                 Reading Time
               </p>
@@ -124,9 +135,13 @@ const TextArea = () => {
             </h1>
 
             <div className="bg-[#F5F7FF] rounded-2xl h-52 border border-indigo-50">
-              <p className="p-6 italic text-sm text-gray-400">
-                Nothing to preview
-              </p>
+              {text.trim()===""?(  <p className="p-6 italic text-sm text-gray-400">
+                      Nothing to preview
+
+              </p>) : (<p className="p-6 text-sm text-gray-700 whitespace-pre-wrap break-words">
+                  {text}
+              </p> ) }
+            
             </div>
           </div>
         </div>
