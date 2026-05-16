@@ -1,4 +1,4 @@
-// import { useState } from 'react'
+
 import Navbar from "./components/Navbar";
 import Details from "./components/Details";
 import FAQ from "./components/FAQ";
@@ -8,7 +8,7 @@ import TextArea from "./components/TextArea";
 
 
 function App() {
-  // const [count, setCount] = useState(0)
+  
 
   return (
     <>

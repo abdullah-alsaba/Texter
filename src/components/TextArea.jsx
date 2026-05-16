@@ -1,15 +1,23 @@
+import { useState } from "react";
 import "../index.css";
 import { ChevronUp, ChevronDown, Trash2, Copy } from "lucide-react";
 import { FaAlignLeft } from "react-icons/fa6";
 
 const TextArea = () => {
+  const [text, setText] = useState("");
+
+  const handelOnChange = (event) => {
+    setText(event.target.value)
+  }
+
   const handelUpCase = () => {
-    console.log("clicked");
+    let newText = text.toUpperCase()
+    setText(newText);
   };
   const handelLowCase = () => {
-    console.log("clicked");
+     let newText = text.toLocaleLowerCase();
+     setText(newText);
   };
-  
 
   return (
     <div className="py-20 bg-[#fafaff]">
@@ -21,7 +29,7 @@ const TextArea = () => {
             className="w-full h-52 p-5 border border-gray-200 rounded-2xl outline-none
             focus:border-[#4F46E5] focus:ring-4 focus:ring-indigo-100
             text-gray-700 placeholder-gray-400 resize-none transition-all duration-300"
-            placeholder="Write your text here..."
+            placeholder="Write your text here..." value={text} onChange={handelOnChange}
           />
 
           {/* Buttons */}
