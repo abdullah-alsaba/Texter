@@ -138,7 +138,7 @@ const TextArea = () => {
               {text.trim()===""?(  <p className="p-6 italic text-sm text-gray-400">
                       Nothing to preview
 
-              </p>) : (<p className="p-6 text-sm text-gray-700 whitespace-pre-wrap break-words">
+              </p>) : (<p className="p-6 text-sm text-gray-700 whitespace-pre-wrap wrap-break-word">
                   {text}
               </p> ) }
             
