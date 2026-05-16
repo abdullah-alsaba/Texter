@@ -15,7 +15,7 @@ const TextArea = () => {
     setText(newText);
   };
   const handelLowCase = () => {
-    let newText = text.toLocaleLowerCase();
+    let newText = text.toLowerCase();
     setText(newText);
   };
 
@@ -25,6 +25,11 @@ const TextArea = () => {
 
   const handelCopyText = () => {
     navigator.clipboard.writeText(text);
+  };
+
+  const handleRemoveSpaces = () => {
+    let newText = text.split(/\s+/).join(" ").trim();
+    setText(newText);
   };
 
   return (
@@ -76,7 +81,10 @@ const TextArea = () => {
               Copy Text
             </button>
 
-            <button className="flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium text-[#4F46E5] bg-[#EEF2FF] hover:bg-[#4F46E5] hover:text-white transition-all duration-300 cursor-pointer">
+            <button
+              className="flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium text-[#4F46E5] bg-[#EEF2FF] hover:bg-[#4F46E5] hover:text-white transition-all duration-300 cursor-pointer"
+              onClick={handleRemoveSpaces}
+            >
               <FaAlignLeft size={14} />
               Remove Extra Spaces
             </button>
