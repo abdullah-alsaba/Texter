@@ -2,6 +2,7 @@ import { useState } from "react";
 import "../index.css";
 import { ChevronUp, ChevronDown, Trash2, Copy } from "lucide-react";
 import { FaAlignLeft } from "react-icons/fa6";
+import { toast } from "react-toastify";
 
 const TextArea = () => {
 
@@ -26,10 +27,12 @@ const TextArea = () => {
 
   const handelClearText = () => {
     setText("");
+    toast.error("Text Cleared")
   };
 
   const handelCopyText = () => {
     navigator.clipboard.writeText(text);
+    toast.success("Text Copied")
   };
 
   const handleRemoveSpaces = () => {
