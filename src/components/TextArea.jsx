@@ -7,16 +7,20 @@ const TextArea = () => {
   const [text, setText] = useState("");
 
   const handelOnChange = (event) => {
-    setText(event.target.value)
-  }
+    setText(event.target.value);
+  };
 
   const handelUpCase = () => {
-    let newText = text.toUpperCase()
+    let newText = text.toUpperCase();
     setText(newText);
   };
   const handelLowCase = () => {
-     let newText = text.toLocaleLowerCase();
-     setText(newText);
+    let newText = text.toLocaleLowerCase();
+    setText(newText);
+  };
+
+  const handelClearText = () => {
+    setText("");
   };
 
   return (
@@ -29,7 +33,9 @@ const TextArea = () => {
             className="w-full h-52 p-5 border border-gray-200 rounded-2xl outline-none
             focus:border-[#4F46E5] focus:ring-4 focus:ring-indigo-100
             text-gray-700 placeholder-gray-400 resize-none transition-all duration-300"
-            placeholder="Write your text here..." value={text} onChange={handelOnChange}
+            placeholder="Write your text here..."
+            value={text}
+            onChange={handelOnChange}
           />
 
           {/* Buttons */}
@@ -50,7 +56,10 @@ const TextArea = () => {
               Convert to Lowercase
             </button>
 
-            <button className="flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium text-[#4F46E5] bg-[#EEF2FF] hover:bg-[#4F46E5] hover:text-white transition-all duration-300 cursor-pointer">
+            <button
+              className="flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium text-[#4F46E5] bg-[#EEF2FF] hover:bg-[#4F46E5] hover:text-white transition-all duration-300 cursor-pointer"
+              onClick={handelClearText}
+            >
               <Trash2 size={16} />
               Clear Text
             </button>
